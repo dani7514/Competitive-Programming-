@@ -6,7 +6,8 @@ class Solution:
             graph[i[0]].append(i[1])
             graph[i[1]].append(i[0])
             
-        visited=[source]
+        visited=set()
+        visited.add(source)
         queue=deque([source])
         
         while queue:
@@ -17,7 +18,7 @@ class Solution:
             for i in graph[node]:
                 if not i in visited:
                     queue.append(i)
-                    visited.append(i)
+                    visited.add(i)
         return False
         
         
