@@ -15,13 +15,11 @@ class Solution:
                     l[j]=t
 
         h=0
-
         for i in range(n):
             if(nums[i]==0):
                 h=h+1
                 if(h==n):
                     return '0'
-
 
         c=''.join(l)
         return c
