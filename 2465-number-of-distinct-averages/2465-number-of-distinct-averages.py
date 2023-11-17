@@ -10,7 +10,7 @@ class Solution:
             arr.add(avg)
             i+=1
             j-=1
-        print(arr)
+            
         return len(arr)
             
             
